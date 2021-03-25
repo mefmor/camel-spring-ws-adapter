@@ -1,3 +1,8 @@
+# Apache Camel and Spring WS
+
+Пример демонстрирует построение SOAP сервера на основе Spring Boot используя Apache Camel и компонент spring-ws
+
+В качестве источника запросов предполагается использование SoapUI, проект которого генерируется из WSDL
 
 spring-ws:rootqname:{http://Example.org}Add?endpointMapping=#endpointMapping
 
