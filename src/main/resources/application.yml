@@ -1,4 +1,1 @@
-spring.webservices:
-  path: "/v1/"
-  wsdl-locations: "/wsdl/"
-  servlet.load-on-startup: 1
+
