@@ -22,7 +22,6 @@ public class WebServiceConfig extends WsConfigurerAdapter {
     public ServletRegistrationBean<MessageDispatcherServlet> messageDispatcherServlet(ApplicationContext applicationContext) {
         MessageDispatcherServlet servlet = new MessageDispatcherServlet();
         servlet.setApplicationContext(applicationContext);
-        servlet.setTransformWsdlLocations(true);
         return new ServletRegistrationBean<>(servlet, "/ws/*");
     }
 
@@ -34,7 +33,9 @@ public class WebServiceConfig extends WsConfigurerAdapter {
 // TODO: Engage AXIOM instead SAAJ
 //    @Bean
 //    public AxiomSoapMessageFactory messageFactory() {
-//        return new AxiomSoapMessageFactory();
+//        AxiomSoapMessageFactory factory = new AxiomSoapMessageFactory();
+//        factory.setPayloadCaching(true);
+//        return factory;
 //    }
 
     /**
