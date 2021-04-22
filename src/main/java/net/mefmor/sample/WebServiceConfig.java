@@ -30,7 +30,25 @@ public class WebServiceConfig extends WsConfigurerAdapter {
         return new SimpleWsdl11Definition(new ClassPathResource("countries.wsdl"));
     }
 
-// TODO: Engage AXIOM instead SAAJ
+
+//    /**
+//     * TODO: Engage AXIOM instead SAAJ
+//     *
+//     * When this bean is uncommented, we get the following in the responses for request:
+//     * <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+//     * <soapenv:Header/>
+//     * <soapenv:Body>
+//     *     <soapenv:Fault>
+//     *         <faultcode>soapenv:Server</faultcode>
+//     *         <faultstring xml:lang="en">java.lang.NullPointerException</faultstring>
+//     *     </soapenv:Fault>
+//     * </soapenv:Body>
+//     * </soapenv:Envelope>
+//     *
+//     * and there is no any information in the log
+//     *
+//     * @return AxiomSoapMessageFactory
+//     */
 //    @Bean
 //    public AxiomSoapMessageFactory messageFactory() {
 //        AxiomSoapMessageFactory factory = new AxiomSoapMessageFactory();
