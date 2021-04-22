@@ -37,6 +37,10 @@ public class WebServiceConfig extends WsConfigurerAdapter {
 //        return new AxiomSoapMessageFactory();
 //    }
 
+    /**
+     * See <a href="https://bit.ly/3eCckTF">Исключение "нет адаптера для конечной точки" - apache-camel с spring-boot & spring-ws</a>
+     * @return EndpointAdapter
+     */
     @Bean
     public EndpointAdapter endpoint() {
         return new MessageEndpointAdapter();

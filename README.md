@@ -56,4 +56,6 @@ o.s.ws.server.EndpointNotFound: No endpoint mapping found for [AxiomSoapMessage 
 Походу, CountryRepository не работает. Да проблема в нём. Сейчас будем исправлять
 Всё взлетело. Но! Если я создам бин AxiomSoapMessageFactory messageFactory() - то буду получать ошибку, как и выше
 
-Надо переставать быть ебучей макакой...
+Поменял версию AXIOM на 1.2.13, теперь получаю ошибку:
+java.lang.NoSuchMethodError: org.apache.axiom.soap.SOAPModelBuilder.getSOAPMessage()Lorg/apache/axiom/soap/SOAPMessage;
+Вернул версию на 1.2.22, попробовал выставлять factory.setPayloadCaching(false); - не помогло
