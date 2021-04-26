@@ -23,4 +23,4 @@ Sample of SOAP request to the service:
 ## Resources
 - [Spring Web Services Example](https://people.apache.org/~dkulp/camel/spring-ws-example.html)
 - [Spring WebService Component](https://camel.apache.org/components/2.x/spring-ws-component.html)
-- [Spring Web Services Reference Documentation](https://docs.spring.io/spring-ws/docs/3.0.10.RELEASE/reference/#overview)
+- [Spring Web Services Reference Documentation](https://docs.spring.io/spring-ws/docs/3.0.7.RELEASE/reference/)
